@@ -1,0 +1,37 @@
+
+  .fruits, .vegetables {
+    margin-bottom: 30px;
+   
+  }
+
+  .fruits ul, .vegetables ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .fruits li, .vegetables li {
+    list-style-type: none; 
+    padding: 0;
+    margin: 10px;
+
+  }
+  
+  
+  
+  .fruits img, .vegetables img {
+    max-width: 100%;  
+    height: auto;     
+  }
+  .fruit-item{
+    width: 30%;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .vegetable-item{
+    width: 30%;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
