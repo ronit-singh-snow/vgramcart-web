@@ -1,0 +1,59 @@
+.main-content {
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+     box-sizing: border-box;
+     height: 90vh;
+}
+
+.text-content {
+ flex: 1 1;
+ max-width: 50%;
+ padding-right: 20px;
+ text-align: left;
+ justify-items: center;
+
+}
+.image-content {
+ flex: 1; 
+ max-width: 50%; 
+ text-align: right; 
+}
+
+.grocery-image {
+ max-width: 90%; 
+ height: auto; 
+ object-fit: contain;
+ background: none; 
+ margin-left: auto; 
+}
+.text-content h1 {
+ font-size: 36px;
+ color: #333;
+}
+
+.text-content p {
+ font-size: 18px;
+ color: #555;
+ padding-bottom: 2rem;
+}
+
+.shop-button {
+ padding: 10px 20px;
+ font-size: 16px;
+ color: white;
+ background-color: cornflowerblue;
+ border: none;
+ cursor: pointer;
+}
+
+.shop-button:hover{
+ background-color: rgb(36, 83, 172); 
+cursor: pointer;
+}
+
+
