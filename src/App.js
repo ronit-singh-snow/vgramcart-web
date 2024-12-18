@@ -7,7 +7,6 @@ import Contact from "./Contact/Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-import Main from "./Mainpage/Main";
 
 function App() {
   const scrollToContact = () => {
@@ -17,24 +16,20 @@ function App() {
     }
   };
 
-
   return (
     <>
       <Router>
-        <div className="app-container">
+        <div className="app-content">
           <Header scrollToContact={scrollToContact} />
 
-          <main>
             <Routes>
-              <Route path="/" element={<Main/>} />
               <Route path="/productlist" element={<ProductList />} />
               <Route path="/homepage" element={<Homepage />} />
               <Route path="/product/:id" element={<ProductDetails />} />
               <Route path="/login" element={<AdminLogin />} />
             </Routes>
 
-             <Contact />
-          </main>
+            <Contact />
 
           <Footer />
         </div>
