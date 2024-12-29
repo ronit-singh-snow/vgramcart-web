@@ -1,4 +1,4 @@
-.main-content {
+/* .main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +53,16 @@
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+.shop-button:hover{
+ background-color: rgb(36, 83, 172); 
+cursor: pointer;
+}
+
+ */
+=======
 .shop-button:hover {
     background-color: rgb(36, 83, 172);
     cursor: pointer;
 }
+>>>>>>> 2680930f8253cef547e9eb0a64a31c1194f75c58
