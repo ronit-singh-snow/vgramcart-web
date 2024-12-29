@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.navbar a,
+.navbar button {
+
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+.navbar a {
+  cursor: pointer;
+}
+
+.navbar button {
+
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+.navbar a:hover,
+.navbar button:hover {
+  font-weight: 600;
+}
+
+.navbar a:focus,
+.navbar button:focus {
+  outline: none;
+}
+
+.main-content {
+  display: flex;
+  padding: 20px;
+  height: 100vh;
+  color: white;
+  background: url('https://cloud.appwrite.io/v1/storage/buckets/6723636300050d7a50f2/files/676d5c5e000882cc28d4/view?project=66efac960005a73d7247&project=66efac960005a73d7247&mode=admin') no-repeat center center;
+  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+}
+
+.app-banner {
+  position: absolute;
+  bottom: 70px;
+  background: linear-gradient(#16788B, #062025);
+  left: 140px;
+  padding: 20px;
+  border-radius: 20px;
+  color: #B4BFB5;
+}
+
+.app-description {
+  width: 25rem;
+}
+
+.play-icon{
+  width: 36px;
+  height: 36px;
+}
+
+.download-text {
+  padding-left: 10px;
+  font-weight: bold;
+  color: #17e317;
+}
+
+.app-link {
+  border: 1px solid;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.text-content {
+  padding: 30px;
+  border-radius: 10px;
+  justify-items: center;
+  color: black;
+}
+
+.company-name {
+  font-size: 4rem;
+  color: #5a9532;
+  font-family: cursive;
+}
+.subtitle {
+  color: #ffa92c;
+  font-size: 1rem;
+  font-family: cursive;
+}
+
+.download-link {
+  padding: 10px;
+  background-color: #342178;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.download-app-container {
+  width: 300px;
+  height: 150px;
+  background-color: #36bd32;
+  border-radius: 10px;
+  color: #f1f6d6;
+  padding: 20px;
+  font-family: cursive;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.shop-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.shop-button:hover {
+  background-color: #218838;
+}

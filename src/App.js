@@ -7,7 +7,7 @@ import Contact from "./Contact/Contact";
 import OurProduct from "./OurProduct/OurProduct";
 import KeyFeatures from "./KeyFeatures/Keyfeatures";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./Header/Header";
+import LandingPage from "./LandingPage/LandingPage";
 import Footer from "./Footer/Footer";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     <>
       <Router>
         <div className="app-content">
-          <Header scrollToContact={scrollToContact} />
+          <LandingPage scrollToContact={scrollToContact} />
 
             <Routes>
               <Route path="/productlist" element={<ProductList />} />
