@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: #858080;
+    background-color: #1a1818;
     color: white;
     padding: 20px 50px;
   }
@@ -10,6 +10,7 @@
   .footer-section h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    color: forestgreen;
   }
   
   .footer-section ul {
@@ -24,12 +25,16 @@
   .footer-section ul li a {
     color: white;
     text-decoration: none;
+    font-size: 12px;
+
   }
   
   .social-links a {
     display: block;
     color: white;
     margin-bottom: 5px;
+    font-size: 12px;
+
   }
   
   .app-store-link,
@@ -38,6 +43,8 @@
     margin-top: 5px;
     color: white;
     text-decoration: none;
+    font-size: 12px;
+
   }
   
   .app-store-link:hover,
