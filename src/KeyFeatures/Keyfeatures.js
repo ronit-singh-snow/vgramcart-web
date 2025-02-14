@@ -17,13 +17,30 @@ const App = () => {
       title: "Women Empowerment",
       description: "By choosing us, you support women entrepreneurs and workers who form the backbone of our supply chain",
     },
-    {
-      title: "Sustainable Practices",
-      description: "We are committed to protecting the environment with sustainable sourcing, packaging, and delivery practices",
-    },
+   
     {
       title: "Affordable Pricing",
       description: "Enjoy premium products at the best prices. Great value for your money, every time",
+    },
+    {
+title: "Unbeatable Quality",
+description: "We source our produce directly from local farms and select only the ripest, most delicious options",
+    },
+    {
+title: "Convenience Redefined",
+description: " Order anytime, anywhere, and have your groceries delivered at your convenience. No more crowded markets or long queues",
+    },
+    {
+title: "Wide Selection",
+description: "Explore a vast variety of fruits and vegetables, from seasonal favorites to exotic finds",
+    },
+    {
+title: "Easy Ordering",
+description: "Our user-friendly app makes browsing and ordering a breeze",
+    },
+    {
+title: "Support Local Farmers",
+description: "By choosing [App Name], you support local farmers and contribute to a sustainable food system",
     },
   ];
 
