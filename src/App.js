@@ -6,11 +6,20 @@ import ProductList from "./ProductList/ProductList";
 import Contact from "./Contact/Contact";
 import OurProduct from "./OurProduct/OurProduct";
 import KeyFeatures from "./KeyFeatures/Keyfeatures";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import LandingPage from "./LandingPage/LandingPage";
 import Footer from "./Footer/Footer";
 
-function App() {
+  function AppContent() {
+    const location = useLocation();
+      if (location.pathname === "/productlist") {
+      return <ProductList />;
+    }
+
+      if (location.pathname.startsWith("/product/")) {
+        return <ProductDetails />;
+      }
+
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact-section");
     if (contactSection) {
@@ -20,14 +29,11 @@ function App() {
 
   return (
     <>
-      <Router>
         <div className="app-content">
           <LandingPage scrollToContact={scrollToContact} />
-
             <Routes>
-              <Route path="/productlist" element={<ProductList />} />
               <Route path="/homepage" element={<Homepage />} />
-              <Route path="/product/:id" element={<ProductDetails />} />
+              {/* <Route path="/product/:id" element={<ProductDetails />} /> */}
               <Route path="/login" element={<AdminLogin />} />
             </Routes>
             <OurProduct/>
@@ -36,8 +42,15 @@ function App() {
 
           <Footer />
         </div>
-      </Router>
     </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
