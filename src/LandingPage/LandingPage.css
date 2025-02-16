@@ -135,3 +135,54 @@
   border-radius: 10px;
 }
 
+.download-app-container {
+  width: 300px;
+  height: 150px;
+  background-color: #36bd32;
+  border-radius: 10px;
+  color: #f1f6d6;
+  padding: 20px;
+  font-family: cursive;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.shop-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.shop-button:hover {
+  background-color: #218838;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); 
+  animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

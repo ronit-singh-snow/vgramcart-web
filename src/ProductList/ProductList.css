@@ -1,52 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
+.product-list-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
-.MainContainer{
-    width: 100vw;
-    height: 70vh;
-    background-image: url('https://cloud.appwrite.io/v1/storage/buckets/6723636300050d7a50f2/files/67236614002c5fa39806/view?project=66efac960005a73d7247&project=66efac960005a73d7247&mode=admin');
-    background-size: cover;
-    background-position: center;
 
-    color: white;
-
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
-.navbar-brand {
-    font-size: 4rem;
-    font-weight: bold;
-    width: 50%;
-    margin: 0 auto;
-    height: 13rem;
-    display: grid;
-    place-items: center;
-  }
-  .search-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
 
-  .search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  
-  .search-field {
-    width: 400px;
-    height: 25px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 300;
-  }
-  
-  .search-field:focus {
-    outline: none;
-  }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-name {
+  font-size: 18px;
+  color: green;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 16px;
+  color: green;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.view-more {
+  background-color: rgb(33, 116, 33);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-more:hover {
+  background-color: rgb(10, 36, 10);
+}

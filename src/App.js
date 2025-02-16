@@ -3,13 +3,21 @@ import Homepage from "./Homepage/Homepage";
 import AdminLogin from "./AdminLogin/AdminLogin";
 import ProductDetails from "./ProductDetails/ProductDetails";
 import ProductList from "./ProductList/ProductList";
-
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import LandingPage from "./LandingPage/LandingPage";
 import DeleteAccount from "./DeleteAccount/DeleteAccount";
 
 
-function App() {
+  function AppContent() {
+    const location = useLocation();
+      if (location.pathname === "/productlist") {
+      return <ProductList />;
+    }
+
+      if (location.pathname.startsWith("/product/")) {
+        return <ProductDetails />;
+      }
+
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact-section");
     if (contactSection) {
@@ -19,7 +27,6 @@ function App() {
 
   return (
     <>
-      <Router>
         <div className="app-content">
           {/* <LandingPage scrollToContact={scrollToContact} /> */}
 
@@ -35,8 +42,15 @@ function App() {
 
           
         </div>
-      </Router>
     </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
