@@ -70,6 +70,7 @@ const ProductDetails = () => {
                 </h1>
                 <p>Price: ₹
                     <input 
+                        className='product-input-text'
                         type="text" 
                         name="unit_price" 
                         value={product.unit_price} 
@@ -79,6 +80,7 @@ const ProductDetails = () => {
                 </p>
                 <p>Unit: 
                     <input 
+                        className='product-input-text'
                         type="text" 
                         name="unit" 
                         value={product.unit} 
@@ -96,6 +98,7 @@ const ProductDetails = () => {
                 </p>
                 <p>Benefits: 
                     <textarea 
+                        className='product-input-text'
                         name="benefits" 
                         value={product.benefits} 
                         onChange={handleChange} 
@@ -104,6 +107,7 @@ const ProductDetails = () => {
                 </p>
                 <p>Category: 
                     <input 
+                        className='product-input-text'
                         type="text" 
                         name="category" 
                         value={product.category} 
@@ -113,6 +117,7 @@ const ProductDetails = () => {
                 </p>
                 <p>SubCategory: 
                     <input 
+                        className='product-input-text'
                         type="text" 
                         name="sub_category" 
                         value={product.sub_category} 

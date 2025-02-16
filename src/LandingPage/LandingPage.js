@@ -1,10 +1,14 @@
 import React from 'react';
 import './LandingPage.css';
+import Contact from "../Contact/Contact";
+import OurProduct from "../OurProduct/OurProduct";
+import KeyFeatures from "../KeyFeatures/Keyfeatures";
+import Footer from "../Footer/Footer";
 
 function LandingPage() {
     return (
-        <div className="main-content">
-            <main>
+        <div >
+            <main className="main-content">
                 <div className='app-banner'>
                     <div className='app-description'>
                         Online ordering is currently available from the app. Click on the below link to download the app.
@@ -18,6 +22,9 @@ function LandingPage() {
                     </div>
                 </div>
             </main>
+            <OurProduct />
+            <KeyFeatures />
+            <Footer />
         </div>
     );
 }
