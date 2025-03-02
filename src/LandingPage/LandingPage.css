@@ -79,14 +79,13 @@
   position: absolute;
   bottom: 70px;
   background: linear-gradient(#16788B, #062025);
-  left: 140px;
   padding: 20px;
   border-radius: 20px;
   color: #B4BFB5;
 }
 
 .app-description {
-  width: 25rem;
+  /* width: 25rem; */
 }
 
 .play-icon{
