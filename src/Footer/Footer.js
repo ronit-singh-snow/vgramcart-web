@@ -23,15 +23,14 @@ function Footer() {
       <div className="footer-section">
         <h3>Follow Us</h3>
         <div className="social-links">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/profile.php?id=61572602042603" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/admin_vgramcart/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       </div>
       <div className="footer-section">
         <h3>Download App</h3>
-        <a href="/" className="app-store-link">App Store</a>
-        <a href="/" className="play-store-link">Play Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.vgram.cart&hl=en" className="app-store-link">App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.vgram.cart&hl=en" className="play-store-link">Play Store</a>
       </div>
     </footer>
   );

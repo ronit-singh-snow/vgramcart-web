@@ -1,0 +1,372 @@
+/* App.css */
+:root {
+  --primary-color: #ffa302;
+  --primary-dark: #B8941F;
+  --secondary-color: #2E7D32;
+  --dark-color: #1A331A;
+  --light-color: #F8F5E6;
+  --text-color: #333;
+  --text-light: #666;
+  --primary: 25 45% 25%;
+  --dark-green: #227222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--dark-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--light-color);
+}
+
+.brand-text {
+  color: var(--light-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+}
+
+.brand-text span {
+  color: var(--primary-color);
+}
+.nav-link {
+  font-weight: 500;
+  margin: 0 10px;
+  color: var(--dark-color);
+  transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 150px 0 100px;
+  background: linear-gradient(135deg, #F8F5E6 0%, #E8F5E9 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-background {
+    background: url("/public/hero-rice-field.jpg");
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="%23D4AF37" fill-opacity="0.05" d="M10,10 L90,10 L90,90 L10,90 Z" stroke-width="0"></path></svg>');
+  background-size: 20px;
+  opacity: 0.3;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.premium-text {
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: rgb(250, 248, 245);
+  margin-top: 9rem;
+  font-family: "Playfair Display", Georgia, serif, Georgia, serif;
+}
+
+.hero-title .highlight {
+  color: var(--dark-green);
+  position: relative;
+  display: block;
+}
+
+.hero-title .highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(212, 175, 55, 0.2);
+  z-index: -1;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: rgba(250, 248, 245, 0.8);
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+
+.btn-explore {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.btn-story:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-story {
+  border: 2px solid var(--primary-color);
+  color: var(--light-color);
+  padding: 10px 28px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s;
+  margin-left: 15px;
+  background-color: #5d5858ba;
+}
+
+.btn-explore:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Rice Image Container */
+.hero-image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rice-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.rice-image {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #f5e6a1, #e6d18c);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rice-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.8) 2px, transparent 3px),
+    radial-gradient(circle at 60% 70%, rgba(255, 255, 255, 0.8) 1px, transparent 2px),
+    radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.8) 3px, transparent 4px),
+    radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.8) 2px, transparent 3px),
+    radial-gradient(circle at 30% 80%, rgba(255, 255, 255, 0.8) 1px, transparent 2px);
+  background-size: 100px 100px;
+  opacity: 0.7;
+}
+
+.organic-badge {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  animation: float 3s ease-in-out infinite;
+}
+
+.organic-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.organic-icon {
+  font-size: 1.8rem;
+}
+
+.organic-text {
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+/* Features Section */
+.features-section {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 30px 20px;
+  transition: transform 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+}
+
+.feature-item p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer h5 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
+
+/* Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.product-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.badge-best-seller {
+  background-color: #436d40;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.products-section {
+  background-color: #104733;
+}
+
+.services-text-color {
+
+}
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .btn-shop, .btn-explore {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 120px 0 80px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rice-image {
+    height: 300px;
+    margin-top: 30px;
+  }
+  
+  .feature-item {
+    margin-bottom: 30px;
+  }
+}

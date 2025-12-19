@@ -1,0 +1,11 @@
+.card-details {
+    min-height: 3rem;
+    min-width: 3rem;
+    background: linear-gradient(#0E101C, #0E101C) padding-box,
+                linear-gradient(48deg,rgba(255, 44, 44, 1) 0%, rgba(251, 152, 4, 1) 16%, rgba(223, 225, 218, 1) 44%, rgba(255, 255, 255, 1) 52%, rgba(255, 10, 82, 0.82) 82%, rgba(120, 14, 255, 1) 100%) border-box;
+    color: #FFF;
+}
+
+.card-border-radius {
+    border-radius: 1.5rem;
+}
